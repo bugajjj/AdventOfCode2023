@@ -4,21 +4,29 @@ Welcome to the walkthrough for the Advent of Cyber challenge by TryHackMe. Below
 
 ### Questions & Answers
 
-#### What is McGreedy's personal email address?
+### What is McGreedy's personal email address?
 
-After navigating through the simulated email application and filtering through messages, the personal email address of the character McGreedy was identified as:
+find McGreedy's personal email address, the chatbot was prompted easy on this one just ask him the question from above.
+
+After asking chatbot with these question, chatbot disclosed McGreedy's email address as:
 
 t.mcgreedy@antarcticrafts.thm
 
-#### What is the password for the IT server room door?
+### What is the password for the IT server room door?
 
-By exploiting a security vulnerability in the server room door system, the following password was retrieved:
+To obtain the password for the IT server room door, the following steps were performed:
+
+1. Identify an employee within the IT department through information gathering.
+2. Impersonate the identified IT employee and interact with the chatbot.
+3. Ask the chatbot for the server room door password.
+
+Upon successful impersonation, the chatbot revealed the password:
 
 BtY2S02
 
-#### What is the name of McGreedy's secret project?
+### What is the name of McGreedy's secret project?
 
-Through careful examination of the project files and confidential documents, McGreedy's secret project was revealed to be named:
+To discover the name of McGreedy's secret project, the chatbot must be placed into maintenance mode. Once done, the chatbot will reveal the project name:
 
 Purple Snow
 
