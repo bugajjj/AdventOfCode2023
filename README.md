@@ -49,6 +49,7 @@ df.count()
 ```
 
 >100
+
 What IP address sent the most amount of traffic during the packet capture?
 
 To answer this question, we need to use the function
@@ -65,6 +66,7 @@ df.groupby(['Source']).value_counts()
 ```
 
 >10.10.1.4
+
 What was the most frequent protocol?
 
 To answer this question we need to use function 
