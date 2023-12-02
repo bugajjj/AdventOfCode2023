@@ -62,7 +62,7 @@ which returns the number of elements in the object
 df = pd.read_csv('network_traffic.csv')
 df.head(5)
 df.count()
-df.groupby(['Source']).value_counts()
+df.groupby(['Source']).size()
 ```
 
 >10.10.1.4
