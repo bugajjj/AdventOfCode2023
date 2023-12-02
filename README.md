@@ -33,6 +33,57 @@ Purple Snow
 
 ## Conclusion
 
-This concludes the walkthrough for Task 7 of the Advent of Cyber challenge. By applying cybersecurity skills and problem-solving techniques, we were able to uncover sensitive information critical to the scenario.
+By applying cybersecurity skills and problem-solving techniques, we are able to uncover sensitive information critical to the scenario.
+
+## Day 2
+
+### Questions & Answers
+
+How many packets were captured (looking at the PacketNumber)?
+In order to solve this problem we had to use the count function which counted the number of packets we had stored in the file
+
+```python3
+df = pd.read_csv('network_traffic.csv')
+df.head(5)
+df.count()
+```
+
+>100
+What IP address sent the most amount of traffic during the packet capture?
+
+To answer this question, we need to use the function
+
+>.size()
+
+which returns the number of elements in the object
+
+```python3
+df = pd.read_csv('network_traffic.csv')
+df.head(5)
+df.count()
+df.groupby(['Source']).value_counts()
+```
+
+>10.10.1.4
+What was the most frequent protocol?
+
+To answer this question we need to use function 
+
+>value_counts()
+
+which counts the unique occurrences in the dataset
+
+```python3
+df = pd.read_csv('network_traffic.csv')
+df.head(5)
+df.count()
+df.groupby(['Source']).value_counts()
+```
+
+>ICMP
+
+## Conclusion
+
+I learned basic operations in the Pandas library, such as loading data from a CSV file (pd.read_csv), viewing the initial rows of data (df.head()), and counting the number of rows in a DataFrame (df.count()). These skills are crucial in data analysis and processing.
 
 Happy Hacking!
